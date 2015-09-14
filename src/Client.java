@@ -50,7 +50,7 @@ public class Client
         }
     }
 
-    public void getAuthenticator()
+    private void getAuthenticator()
     {
         System.out.println("1.)Use single sign on NetID\n2.)Use Active Directory");
         String response = this.in.nextLine();
@@ -68,7 +68,7 @@ public class Client
         }
     }
 
-    public void getCredentials()
+    private void getCredentials()
     {
         System.out.print("username:");
         this.username = this.in.nextLine();
@@ -76,7 +76,7 @@ public class Client
         this.password = this.in.nextLine();
     }
 
-    public boolean menu()
+    private boolean menu()
     {
         System.out.println("1.)Do Stuff\n2.)Log Out");
         String response = this.in.nextLine();
